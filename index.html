@@ -42,15 +42,20 @@
       </div>
       <div class="form-row">
         <label for="phone">Phone Number</label>
-        <input type="tel" name="phone" id="phone" required>
+        <input
+          type="tel"
+          name="phone"
+          id="phone"
+          pattern="^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$"
+          required>
       </div>
       <div class="form-row">
         <label for="password">Password</label>
         <input type="password" name="password" id="password" required>
       </div>
       <div class="form-row">
-        <label for="pass_confirm">Confirm Password</label>
-        <input type="password" id="pass_confirm" required>
+        <label for="pass-confirm">Confirm Password</label>
+        <input type="password" id="pass-confirm" required>
       </div>
     </form>
     <div class="cta-container">

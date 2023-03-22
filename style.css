@@ -109,7 +109,7 @@ input {
 }
 
 .error {
-  border-color: red;
+  border-color: #ff4000;
 }
 
 .cta-container {
