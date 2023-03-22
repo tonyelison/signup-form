@@ -6,7 +6,6 @@
 }
 
 body {
-  height: 100vh;
   font-family: Helvetica, Arial, sans-serif;
   font-size: 16px;
   color: #333;
@@ -15,7 +14,8 @@ body {
   flex-direction: column;
   align-items: center;
 
-  --color-primary: #22aa92;
+  --color-primary: #883dff;
+  --color-secondary: #ababb7;
 }
 
 header,
@@ -24,7 +24,7 @@ section {
 }
 
 header {
-  background-color: var(--color-primary);
+  background: linear-gradient(to bottom right, var(--color-primary), #b55bf5);
   color: white;
   height: 20%;
 
@@ -33,19 +33,37 @@ header {
   justify-content: center;
 }
 
-h1 {
-  font-size: 2rem;
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section > div {
   text-align: center;
 }
 
+h1, h2 {
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 25px;
+  color: var(--color-primary);
+}
+
+h2 {
+  margin-bottom: 30px;
+}
+
 form {
-  margin: auto;
   width: 100%;
-  max-width: 700px;
   padding: 20px;
   font-size: .875rem;
 
   display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(212px, 1fr));
   gap: 40px 40px;
 }
 
@@ -68,35 +86,51 @@ button {
   background-color: var(--color-primary);
   color: white;
   font-size: 1rem;
-  border: none;
+  border: 2px solid transparent;
   border-radius: 30px;
-  padding: 14px 70px;
+  padding: 12px 68px;
   width: auto;
 
-  display: block;
-  margin: 20px auto auto auto;
+  margin-inline: auto;
+  margin-top: 30px;
+
+  transition: color, ease-in-out, 0.1s;
 }
 
-/* medium screen adjust */
-@media only screen and (min-width: 725px) {
+button:hover {
+  cursor: pointer;
+  background-image: linear-gradient(rgb(0 0 0/10%) 0 0);
+}
+
+button:active {
+  border-color: #146052;
+}
+
+/* medium screens */
+@media only screen and (min-width: 769px) {
   body {
     flex-direction: row;
     align-items: stretch;
   }
 
+  header,
+  section {
+    min-height: 100vh;
+  }
+
   header {
-    flex-basis: 60%;
+    flex: 1 0 350px;
     height: auto;
   }
 
   section {
-    margin: auto;
+    margin-top: 8vh;
   }
 }
 
-/* large screen adjust */
-@media only screen and (min-width: 968px) {
+/* large screens */
+@media only screen and (min-width: 1200px) {
   form {
-    grid-template-columns: repeat(2, auto);
+    max-width: 755px;
   }
 }
