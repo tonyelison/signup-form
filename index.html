@@ -6,21 +6,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <title>Signup Form</title>
 </head>
 <body>
-  <header>
+  <section class="hero">
     <div class="logo">
       <img src="assets/rocket.svg">
       <span>LaunchPad</span>
     </div>
-  </header>
+  </section>
   
-  <section>
-    <h1>Welcome!</h1>
-    <h2>Please sign up</h2>
+  <section class="signup-form">
+    <header>
+      <h1>Create an account</h1>
+      <h2>Let's get started with your 30 day free trial.</h2>
+    </header>
     <form action="" method="post" id="form">
       <div class="form-row">
         <label for="first">First Name</label>
@@ -47,8 +49,11 @@
         <input type="password" id="pass_confirm">
       </div>
     </form>
-    <div>
+    <div class="cta-container">
       <button type="button" form="form">Create Account</button>
+      <div class="login-link">
+        Already have an account? <a href="">Log in</a>
+      </div>
     </div>
   </section>
 </body>
