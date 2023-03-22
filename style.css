@@ -94,16 +94,16 @@ button {
   margin-inline: auto;
   margin-top: 30px;
 
-  transition: color, ease-in-out, 0.1s;
+  transition: background-color, 0.2s;
 }
 
 button:hover {
   cursor: pointer;
-  background-image: linear-gradient(rgb(0 0 0/10%) 0 0);
+  background-color: #6e30cc;
 }
 
 button:active {
-  border-color: #146052;
+  border-color: #40177f;
 }
 
 /* medium screens */
