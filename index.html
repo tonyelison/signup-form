@@ -7,7 +7,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./style.css">
+  <script src="./script.js" defer></script>
   <title>Signup Form</title>
 </head>
 <body>
@@ -29,31 +30,31 @@
     <form action="" method="post" id="form">
       <div class="form-row">
         <label for="first">First Name</label>
-        <input type="text" name="first" id="first">
+        <input type="text" name="first" id="first" required>
       </div>
       <div class="form-row">
         <label for="last">Last Name</label>
-        <input type="text" name="last" id="last">
+        <input type="text" name="last" id="last" required>
       </div>
       <div class="form-row">
         <label for="email">Email</label>
-        <input type="email" name="email" id="email">
+        <input type="email" name="email" id="email" required>
       </div>
       <div class="form-row">
         <label for="phone">Phone Number</label>
-        <input type="tel" name="phone" id="phone">
+        <input type="tel" name="phone" id="phone" required>
       </div>
       <div class="form-row">
         <label for="password">Password</label>
-        <input type="password" name="password" id="password">
+        <input type="password" name="password" id="password" required>
       </div>
       <div class="form-row">
         <label for="pass_confirm">Confirm Password</label>
-        <input type="password" id="pass_confirm">
+        <input type="password" id="pass_confirm" required>
       </div>
     </form>
     <div class="cta-container">
-      <button type="button" form="form">Create Account</button>
+      <button type="submit" form="form">Create Account</button>
       <div class="login-link">
         Already have an account? <a href="">Log in</a>
       </div>
