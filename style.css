@@ -54,6 +54,7 @@ h1 {
 }
 
 h2 {
+  font-weight: 500;
   margin-bottom: 30px;
 }
 
@@ -88,12 +89,10 @@ button {
   font-size: 1rem;
   border: 2px solid transparent;
   border-radius: 30px;
-  padding: 12px 68px;
+  padding: 16px 68px;
   width: auto;
-
   margin-inline: auto;
   margin-top: 30px;
-
   transition: background-color, 0.2s;
 }
 
