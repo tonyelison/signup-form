@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  width: 100%;
   box-sizing: border-box;
 }
 
@@ -32,6 +33,10 @@ form {
 }
 
 @media only screen and (min-width: 700px) {
+  body {
+    flex-direction: row;
+  }
+
   form {
     grid-template-columns: repeat(2, auto);
   }
