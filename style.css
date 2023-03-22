@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: "Helvetica", "Arial", sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
   font-size: 16px;
 
   display: flex;
@@ -13,7 +13,26 @@ body {
   align-items: center;
 }
 
-form > div {
+h1 {
+  text-align: center;
+}
+
+form {
+  margin: auto;
+  width: 100%;
+  max-width: 400px;
+
+  display: grid;
+  gap: 20px;
+}
+
+.form-row {
   display: flex;
   flex-direction: column;
+}
+
+@media only screen and (min-width: 700px) {
+  form {
+    grid-template-columns: repeat(2, auto);
+  }
 }
