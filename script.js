@@ -1,6 +1,5 @@
 const submitBtn = document.querySelector(".cta-container button");
 submitBtn.addEventListener('click', () => {
-  validatePassword();
   addErrorClass(document.querySelectorAll("form input:invalid"));
 });
 
@@ -18,14 +17,4 @@ function addErrorClass([...nodes]) {
 
 function removeErrorClass([...nodes]) {
   nodes.forEach((control) => control.classList.remove('error'));
-}
-
-function validatePassword() {
-  const password = document.querySelector("#password");
-  const passConfirm = document.querySelector("#pass-confirm");
-  if (password.value !== passConfirm.value) {
-    addErrorClass([password, passConfirm]);
-  } else {
-    removeErrorClass([password, passConfirm]);
-  }
 }
