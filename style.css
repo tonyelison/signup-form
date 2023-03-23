@@ -42,11 +42,16 @@ body {
   filter: invert(1);
 }
 
+.hero header h1 {
+  display: none;
+  margin-top: 130px;
+  font-size: 40px;
+}
+
 .img-credit {
   display: none;
   font-size: 0.75rem;
   color: white;
-  text-align: center;
   text-decoration: none;
 }
 
@@ -62,18 +67,18 @@ body {
   align-items: center;
 }
 
-header {
+.signup-form header {
   text-align: center;
 }
 
-h1 {
+.signup-form h1 {
   color: var(--color-primary);
   font-weight: 400;
   font-size: 3rem;
   margin-bottom: 15px;
 }
 
-h2 {
+.signup-form h2 {
   font-weight: 300;
   margin-bottom: 40px;
 }
@@ -165,6 +170,10 @@ button:hover {
     flex: 1 1 500px;
     height: auto;
     padding-bottom: 15px;
+  }
+
+  .hero header h1 {
+    display: block;
   }
 
   .img-credit {
